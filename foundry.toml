@@ -4,3 +4,4 @@ out = "out"
 libs = ["lib"]
 solc = "0.8.26"
 gas_limit = "18446744073709551615"
+fs_permissions = [{ access = "read", path = "./data" }]
