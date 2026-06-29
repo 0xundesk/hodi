@@ -27,3 +27,5 @@ interface IAggregator {
  * right now, and how much history it has at all. Thin files cap the grade,
  * the way a borrower with no history cannot be prime.
  */
+contract AAA {
+}
