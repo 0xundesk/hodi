@@ -28,4 +28,6 @@ interface IAggregator {
  * the way a borrower with no history cannot be prime.
  */
 contract AAA {
+    uint256 public constant LOOKBACK = 300; // rounds walked per grading
+
 }
