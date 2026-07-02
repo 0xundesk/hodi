@@ -30,4 +30,7 @@ interface IAggregator {
 contract AAA {
     uint256 public constant LOOKBACK = 300; // rounds walked per grading
 
+    address[] public feeds; // aggregators, where the rounds are stored
+    string[] public names;
+
 }
