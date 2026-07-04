@@ -38,5 +38,7 @@ contract AAA {
         uint256 worstSilence; // longest quiet stretch during market hours, seconds
         uint256 silentNow; // market-hours seconds since the last print
         uint256 roundTrips; // price went A -> B -> exactly A
-}
+        int256 last; // latest answer
+    }
+
 }
