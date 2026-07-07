@@ -41,4 +41,13 @@ contract AAA {
         int256 last; // latest answer
     }
 
+    constructor(address[] memory feeds_, string[] memory names_) {
+        require(feeds_.length == names_.length, "lengths");
+        feeds = feeds_;
+        names = names_;
+    }
+
+    // ---------------------------------------------------------------- grading
+
+    /// The letter for any feed, computed fresh from its own rounds.
 }
