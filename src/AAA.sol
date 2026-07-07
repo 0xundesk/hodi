@@ -50,4 +50,10 @@ contract AAA {
     // ---------------------------------------------------------------- grading
 
     /// The letter for any feed, computed fresh from its own rounds.
+    function grade(address feed) public view returns (string memory letter, Metrics memory m) {
+        m = inspect(feed, LOOKBACK);
+        letter = letterOf(m);
+    }
+
+    /// The whole board, one call.
 }
