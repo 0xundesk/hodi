@@ -56,4 +56,19 @@ contract AAA {
     }
 
     /// The whole board, one call.
+    function reportCard()
+        external
+        view
+        returns (string[] memory tickers, string[] memory letters, Metrics[] memory metrics)
+    {
+        uint256 n = feeds.length;
+        tickers = new string[](n);
+        letters = new string[](n);
+        metrics = new Metrics[](n);
+        for (uint256 i = 0; i < n; i++) {
+            tickers[i] = names[i];
+            (letters[i], metrics[i]) = grade(feeds[i]);
+        }
+    }
+
 }
