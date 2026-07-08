@@ -76,4 +76,23 @@ contract AAA {
     }
 
     /// Walk the feed's stored rounds and measure them. Pure observation.
+    function inspect(address feed, uint256 lookback) public view returns (Metrics memory m) {
+        IAggregator agg = IAggregator(feed);
+        uint256 latest = agg.latestRound();
+        uint256 stop = latest > lookback ? latest - lookback + 1 : 1;
+
+        uint256 newerAt;
+        int256 newerAnswer;
+        int256 newestAnswer2; // the answer after newerAnswer, walking backwards
+
+        for (uint256 id = latest; id >= stop; id--) {
+            (, int256 answer,, uint256 updatedAt,) = agg.getRoundData(uint80(id));
+            if (answer == 0 || updatedAt == 0) {
+                if (id == 1) break;
+                continue;
+            }
+            m.rounds++;
+
+}
+}
 }
