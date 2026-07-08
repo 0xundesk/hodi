@@ -71,4 +71,9 @@ contract AAA {
         }
     }
 
+    function count() external view returns (uint256) {
+        return feeds.length;
+    }
+
+    /// Walk the feed's stored rounds and measure them. Pure observation.
 }
