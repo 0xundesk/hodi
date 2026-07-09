@@ -106,5 +106,11 @@ contract AAA {
             if (id == 1) break;
         }
 
-}
+        (, int256 lastAnswer,, uint256 lastAt,) = agg.latestRoundData();
+        m.last = lastAnswer;
+        m.silentNow = lastAt == 0 ? type(uint256).max : openSecondsBetween(lastAt, block.timestamp);
+    }
+
+    /// The mapping from measurements to a letter. Pure, so the methodology is
+    /// the code and the code is the methodology.
 }
