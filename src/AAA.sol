@@ -93,6 +93,18 @@ contract AAA {
             }
             m.rounds++;
 
-}
+            if (newerAt != 0) {
+                uint256 quiet = openSecondsBetween(updatedAt, newerAt);
+                if (quiet > m.worstSilence) m.worstSilence = quiet;
+                if (newestAnswer2 != 0 && newestAnswer2 == answer && newerAnswer != answer) {
+                    m.roundTrips++; // A -> B -> A, the price came back to the exact print
+                }
+            }
+            newestAnswer2 = newerAnswer;
+            newerAnswer = answer;
+            newerAt = updatedAt;
+            if (id == 1) break;
+        }
+
 }
 }
