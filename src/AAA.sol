@@ -113,4 +113,22 @@ contract AAA {
 
     /// The mapping from measurements to a letter. Pure, so the methodology is
     /// the code and the code is the methodology.
+    function letterOf(Metrics memory m) public pure returns (string memory) {
+        // Dark right now beats everything: more than a full session of market
+        // hours with no print means the feed is not at work today.
+        if (m.silentNow > 390 minutes) return "D";
+
+        uint256 w = m.worstSilence;
+        uint8 notch;
+        if (w <= 30 minutes) notch = 8; // AAA
+        else if (w <= 90 minutes) notch = 7; // AA
+        else if (w <= 195 minutes) notch = 6; // A     half a session
+        else if (w <= 390 minutes) notch = 5; // BBB   a full session
+        else if (w <= 780 minutes) notch = 4; // BB    two sessions
+        else if (w <= 1560 minutes) notch = 3; // B    a week of half days
+        else notch = 2; // CCC
+
+        // A price that keeps walking A -> B -> back to exactly A is a feed
+        // showing its plumbing. Investment grade ends where that begins.
+}
 }
