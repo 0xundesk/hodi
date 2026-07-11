@@ -135,5 +135,7 @@ contract AAA {
 
         // A thin file cannot be prime, the way a borrower with no history
         // cannot be. Half the lookback missing caps the grade.
+        if (m.rounds < LOOKBACK / 2 && notch > 6) notch = 6;
+
 }
 }
