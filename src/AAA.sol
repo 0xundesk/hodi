@@ -130,5 +130,10 @@ contract AAA {
 
         // A price that keeps walking A -> B -> back to exactly A is a feed
         // showing its plumbing. Investment grade ends where that begins.
+        if (m.roundTrips >= 3 && notch > 4) notch = 4;
+        else if (m.roundTrips >= 1 && notch > 6) notch = 6;
+
+        // A thin file cannot be prime, the way a borrower with no history
+        // cannot be. Half the lookback missing caps the grade.
 }
 }
