@@ -158,4 +158,11 @@ contract AAA {
         }
     }
 
+    function isOpen(uint256 t) public pure returns (bool) {
+        (uint256 s, uint256 e) = _session(t / 1 days);
+        return t >= s && t < e && s != 0;
+    }
+
+    /// The regular session for a day (as a unix-day number), or (0, 0) when
+    /// the market does not open at all.
 }
