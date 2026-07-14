@@ -145,4 +145,17 @@ contract AAA {
 
     /// Market-hours seconds inside [from, to]. Weekends, NYSE holidays and
     /// everything outside the regular session count for nothing.
+    function openSecondsBetween(uint256 from, uint256 to) public pure returns (uint256 total) {
+        if (to <= from) return 0;
+        uint256 day = from / 1 days;
+        uint256 lastDay = to / 1 days;
+        for (uint256 guard = 0; day <= lastDay && guard < 500; (day++, guard++)) {
+            (uint256 sessionStart, uint256 sessionEnd) = _session(day);
+            if (sessionStart == 0) continue;
+            uint256 lo = from > sessionStart ? from : sessionStart;
+            uint256 hi = to < sessionEnd ? to : sessionEnd;
+            if (hi > lo) total += hi - lo;
+        }
+    }
+
 }
