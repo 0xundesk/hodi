@@ -137,5 +137,12 @@ contract AAA {
         // cannot be. Half the lookback missing caps the grade.
         if (m.rounds < LOOKBACK / 2 && notch > 6) notch = 6;
 
-}
+        string[9] memory letters = ["", "D", "CCC", "B", "BB", "BBB", "A", "AA", "AAA"];
+        return letters[notch];
+    }
+
+    // ------------------------------------------------- the exchange calendar
+
+    /// Market-hours seconds inside [from, to]. Weekends, NYSE holidays and
+    /// everything outside the regular session count for nothing.
 }
