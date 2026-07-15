@@ -165,4 +165,21 @@ contract AAA {
 
     /// The regular session for a day (as a unix-day number), or (0, 0) when
     /// the market does not open at all.
+    function _session(uint256 day) internal pure returns (uint256 start, uint256 end) {
+        uint256 dow = (day + 3) % 7; // 0 = Monday
+        if (dow >= 5) return (0, 0);
+
+        (uint256 y, uint256 mo, uint256 d) = _civil(day);
+        if (_holiday(y, mo, d)) return (0, 0);
+
+        bool dst = _dst(y, mo, d);
+        // 9:30 to 16:00 New York, expressed in UTC.
+        uint256 openMinute = dst ? 13 * 60 + 30 : 14 * 60 + 30;
+        uint256 closeMinute = dst ? 20 * 60 : 21 * 60;
+        start = day * 1 days + openMinute * 60;
+        end = day * 1 days + closeMinute * 60;
+    }
+
+    /// Full NYSE closures. The list is part of the methodology and a new
+    /// deployment is a new edition, the way a calendar gets a new year.
 }
