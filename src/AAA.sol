@@ -182,4 +182,39 @@ contract AAA {
 
     /// Full NYSE closures. The list is part of the methodology and a new
     /// deployment is a new edition, the way a calendar gets a new year.
+    function _holiday(uint256 y, uint256 mo, uint256 d) internal pure returns (bool) {
+        uint256 date = y * 10000 + mo * 100 + d;
+        uint32[20] memory closed = [
+            // 2026
+            uint32(20260101), // New Year's Day
+            20260119, // Martin Luther King Jr. Day
+            20260216, // Washington's Birthday
+            20260403, // Good Friday
+            20260525, // Memorial Day
+            20260619, // Juneteenth
+            20260703, // Independence Day, observed
+            20260907, // Labor Day
+            20261126, // Thanksgiving
+            20261225, // Christmas
+            // 2027
+            20270101,
+            20270118,
+            20270215,
+            20270326,
+            20270531,
+            20270618, // Juneteenth, observed
+            20270705, // Independence Day, observed
+            20270906,
+            20271125,
+            20271224 // Christmas, observed
+        ];
+        for (uint256 i = 0; i < closed.length; i++) {
+            if (closed[i] == date) return true;
+        }
+        return false;
+    }
+
+    /// US daylight saving: from the second Sunday of March to the first
+    /// Sunday of November. Transitions land on Sundays, when the market is
+    /// closed, so day granularity is exact for every trading day.
 }
