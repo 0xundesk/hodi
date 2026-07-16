@@ -217,4 +217,18 @@ contract AAA {
     /// US daylight saving: from the second Sunday of March to the first
     /// Sunday of November. Transitions land on Sundays, when the market is
     /// closed, so day granularity is exact for every trading day.
+    function _dst(uint256 y, uint256 mo, uint256 d) internal pure returns (bool) {
+        if (mo > 3 && mo < 11) return true;
+        if (mo < 3 || mo > 11) return false;
+        if (mo == 3) {
+            uint256 firstDow = (_days(y, 3, 1) + 4) % 7; // 0 = Sunday
+            uint256 firstSunday = 1 + ((7 - firstDow) % 7);
+            return d >= firstSunday + 7;
+        }
+        uint256 novDow = (_days(y, 11, 1) + 4) % 7;
+        uint256 novSunday = 1 + ((7 - novDow) % 7);
+        return d < novSunday;
+    }
+
+    // Howard Hinnant's civil date algorithms.
 }
