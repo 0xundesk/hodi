@@ -231,4 +231,16 @@ contract AAA {
     }
 
     // Howard Hinnant's civil date algorithms.
+    function _civil(uint256 day) internal pure returns (uint256 y, uint256 mo, uint256 d) {
+        uint256 z = day + 719468;
+        uint256 era = z / 146097;
+        uint256 doe = z - era * 146097;
+        uint256 yoe = (doe - doe / 1460 + doe / 36524 - doe / 146096) / 365;
+        uint256 doy = doe - (365 * yoe + yoe / 4 - yoe / 100);
+        uint256 mp = (5 * doy + 2) / 153;
+        d = doy - (153 * mp + 2) / 5 + 1;
+        mo = mp < 10 ? mp + 3 : mp - 9;
+        y = yoe + era * 400 + (mo <= 2 ? 1 : 0);
+    }
+
 }
