@@ -243,4 +243,12 @@ contract AAA {
         y = yoe + era * 400 + (mo <= 2 ? 1 : 0);
     }
 
+    function _days(uint256 y, uint256 mo, uint256 d) internal pure returns (uint256) {
+        uint256 yy = mo <= 2 ? y - 1 : y;
+        uint256 era = yy / 400;
+        uint256 yoe = yy - era * 400;
+        uint256 doy = (153 * (mo > 2 ? mo - 3 : mo + 9) + 2) / 5 + d - 1;
+        uint256 doe = yoe * 365 + yoe / 4 - yoe / 100 + doy;
+        return era * 146097 + doe - 719468;
+    }
 }
