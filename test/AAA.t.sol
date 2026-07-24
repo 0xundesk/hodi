@@ -27,3 +27,14 @@ contract MockAggregator is IAggregator {
     }
 }
 
+contract AAATest is Test {
+    // Fixed points on the real calendar, in UTC.
+    uint256 constant SEP4_FRI = 1788480000; // 2026-09-04 00:00, a trading Friday
+    uint256 constant SEP7_LABOR = 1788739200; // 2026-09-07, Labor Day
+    uint256 constant SEP8_TUE = 1788825600; // 2026-09-08, a trading Tuesday
+    uint256 constant MAR6_FRI = 1772755200; // 2026-03-06, before the DST switch
+    uint256 constant MAR9_MON = 1773014400; // 2026-03-09, after the DST switch
+
+    AAA agency;
+
+}
