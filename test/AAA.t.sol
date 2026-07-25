@@ -37,4 +37,10 @@ contract AAATest is Test {
 
     AAA agency;
 
+    function setUp() public {
+        agency = new AAA(new address[](0), new string[](0));
+    }
+
+    // ------------------------------------------------------------- calendar
+
 }
