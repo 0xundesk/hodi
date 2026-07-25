@@ -43,4 +43,8 @@ contract AAATest is Test {
 
     // ------------------------------------------------------------- calendar
 
+    function test_saturdayIsClosed() public view {
+        assertFalse(agency.isOpen(SEP4_FRI + 1 days + 15 hours)); // Saturday 15:00 UTC
+    }
+
 }
