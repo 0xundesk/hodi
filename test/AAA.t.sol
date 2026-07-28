@@ -47,4 +47,8 @@ contract AAATest is Test {
         assertFalse(agency.isOpen(SEP4_FRI + 1 days + 15 hours)); // Saturday 15:00 UTC
     }
 
+    function test_laborDayIsClosed() public view {
+        assertFalse(agency.isOpen(SEP7_LABOR + 15 hours), "the agency must know the exchange calendar");
+    }
+
 }
