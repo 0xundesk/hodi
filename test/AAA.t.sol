@@ -51,4 +51,11 @@ contract AAATest is Test {
         assertFalse(agency.isOpen(SEP7_LABOR + 15 hours), "the agency must know the exchange calendar");
     }
 
+    function test_summerSessionIsHalfPastOneUTC() public view {
+        assertFalse(agency.isOpen(SEP8_TUE + 13 hours + 29 minutes));
+        assertTrue(agency.isOpen(SEP8_TUE + 13 hours + 30 minutes));
+        assertTrue(agency.isOpen(SEP8_TUE + 19 hours + 59 minutes));
+        assertFalse(agency.isOpen(SEP8_TUE + 20 hours));
+    }
+
 }
