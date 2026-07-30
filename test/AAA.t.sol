@@ -58,4 +58,14 @@ contract AAATest is Test {
         assertFalse(agency.isOpen(SEP8_TUE + 20 hours));
     }
 
+    function test_winterSessionShiftsAnHour() public view {
+        // Friday before the March switch runs on winter time.
+        assertFalse(agency.isOpen(MAR6_FRI + 13 hours + 30 minutes));
+        assertTrue(agency.isOpen(MAR6_FRI + 14 hours + 30 minutes));
+        assertTrue(agency.isOpen(MAR6_FRI + 20 hours + 30 minutes));
+        // Monday after the switch runs on summer time.
+        assertTrue(agency.isOpen(MAR9_MON + 13 hours + 30 minutes));
+        assertFalse(agency.isOpen(MAR9_MON + 20 hours + 30 minutes));
+    }
+
 }
