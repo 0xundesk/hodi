@@ -68,4 +68,12 @@ contract AAATest is Test {
         assertFalse(agency.isOpen(MAR9_MON + 20 hours + 30 minutes));
     }
 
+    function test_weekendAndHolidayCountForNothing() public view {
+        // Friday 19:00 UTC to Tuesday 14:00 UTC, across Labor Day weekend:
+        // one open hour left on Friday, nothing Saturday through Monday,
+        // thirty open minutes on Tuesday.
+        uint256 quiet = agency.openSecondsBetween(SEP4_FRI + 19 hours, SEP8_TUE + 14 hours);
+        assertEq(quiet, 1 hours + 30 minutes);
+    }
+
 }
