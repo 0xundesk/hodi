@@ -76,4 +76,10 @@ contract AAATest is Test {
         assertEq(quiet, 1 hours + 30 minutes);
     }
 
+    function test_silenceInsideOneSessionIsCounted() public view {
+        assertEq(agency.openSecondsBetween(SEP8_TUE + 15 hours, SEP8_TUE + 18 hours), 3 hours);
+    }
+
+    // --------------------------------------------------------------- letters
+
 }
