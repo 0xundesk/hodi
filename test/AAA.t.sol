@@ -82,4 +82,15 @@ contract AAATest is Test {
 
     // --------------------------------------------------------------- letters
 
+    function _metrics(uint256 rounds, uint256 worst, uint256 silentNow, uint256 trips)
+        internal
+        pure
+        returns (AAA.Metrics memory m)
+    {
+        m.rounds = rounds;
+        m.worstSilence = worst;
+        m.silentNow = silentNow;
+        m.roundTrips = trips;
+    }
+
 }
