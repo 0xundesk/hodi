@@ -93,4 +93,14 @@ contract AAATest is Test {
         m.roundTrips = trips;
     }
 
+    function test_theLadder() public view {
+        assertEq(agency.letterOf(_metrics(300, 20 minutes, 0, 0)), "AAA");
+        assertEq(agency.letterOf(_metrics(300, 80 minutes, 0, 0)), "AA");
+        assertEq(agency.letterOf(_metrics(300, 3 hours, 0, 0)), "A");
+        assertEq(agency.letterOf(_metrics(300, 6 hours, 0, 0)), "BBB");
+        assertEq(agency.letterOf(_metrics(300, 12 hours, 0, 0)), "BB");
+        assertEq(agency.letterOf(_metrics(300, 25 hours, 0, 0)), "B");
+        assertEq(agency.letterOf(_metrics(300, 40 hours, 0, 0)), "CCC");
+    }
+
 }
