@@ -103,4 +103,9 @@ contract AAATest is Test {
         assertEq(agency.letterOf(_metrics(300, 40 hours, 0, 0)), "CCC");
     }
 
+    function test_darkRightNowIsDefault() public view {
+        // A perfect history means nothing if the feed is not at work today.
+        assertEq(agency.letterOf(_metrics(300, 10 minutes, 8 hours, 0)), "D");
+    }
+
 }
