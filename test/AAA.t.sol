@@ -108,4 +108,9 @@ contract AAATest is Test {
         assertEq(agency.letterOf(_metrics(300, 10 minutes, 8 hours, 0)), "D");
     }
 
+    function test_roundTripsEndInvestmentGrade() public view {
+        assertEq(agency.letterOf(_metrics(300, 10 minutes, 0, 1)), "A");
+        assertEq(agency.letterOf(_metrics(300, 10 minutes, 0, 3)), "BB");
+    }
+
 }
