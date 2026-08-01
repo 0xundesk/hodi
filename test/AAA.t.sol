@@ -113,4 +113,11 @@ contract AAATest is Test {
         assertEq(agency.letterOf(_metrics(300, 10 minutes, 0, 3)), "BB");
     }
 
+    function test_aThinFileCannotBePrime() public view {
+        assertEq(agency.letterOf(_metrics(90, 10 minutes, 0, 0)), "A");
+    }
+
+    // ------------------------------------------------------- walking rounds
+
+    /// Prints every ten market minutes across a week: the model employee.
 }
