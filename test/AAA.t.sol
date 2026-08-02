@@ -120,4 +120,21 @@ contract AAATest is Test {
     // ------------------------------------------------------- walking rounds
 
     /// Prints every ten market minutes across a week: the model employee.
+    function test_aPunctualFeedGradesAAA() public {
+        MockAggregator feed = new MockAggregator();
+        for (uint256 day = 0; day < 9; day++) {
+            uint256 base = SEP4_FRI - 7 days + day * 1 days;
+            for (uint256 minute = 810; minute < 1200; minute += 10) {
+                uint256 t = base + minute * 60;
+                if (agency.isOpen(t)) feed.push(100e8, t);
+            }
+        }
+        vm.warp(SEP4_FRI - 7 days + 9 days); // just after the last print, off hours
+        (string memory letter, AAA.Metrics memory m) = agency.grade(address(feed));
+        assertEq(letter, "AAA");
+        assertLe(m.worstSilence, 30 minutes);
+        assertEq(m.roundTrips, 0);
+    }
+
+    /// Same employee, but it slept for four market hours one Wednesday.
 }
