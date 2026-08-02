@@ -137,4 +137,23 @@ contract AAATest is Test {
     }
 
     /// Same employee, but it slept for four market hours one Wednesday.
+    function test_oneLongNapCostsTheGrade() public {
+        MockAggregator feed = new MockAggregator();
+        uint256 wed = SEP8_TUE + 1 days;
+        // Tuesday: every ten minutes, the whole session.
+        for (uint256 minute = 810; minute < 1200; minute += 10) {
+            feed.push(100e8, SEP8_TUE + minute * 60);
+        }
+        // Wednesday: one print at the open, then nothing for four hours.
+        feed.push(100e8, wed + 810 * 60);
+        for (uint256 minute = 810 + 240; minute < 1200; minute += 10) {
+            feed.push(100e8, wed + minute * 60);
+        }
+        vm.warp(wed + 1200 * 60 + 1 hours);
+        (string memory letter, AAA.Metrics memory m) = agency.grade(address(feed));
+        assertEq(m.worstSilence, 4 hours);
+        assertEq(letter, "BBB", "half a session of silence is not investment grade anymore");
+    }
+
+    /// Prices that walk away and come back to the exact print.
 }
