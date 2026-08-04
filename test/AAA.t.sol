@@ -156,4 +156,17 @@ contract AAATest is Test {
     }
 
     /// Prices that walk away and come back to the exact print.
+    function test_roundTripsAreCaught() public {
+        MockAggregator feed = new MockAggregator();
+        uint256 t = SEP8_TUE + 14 hours;
+        int256[7] memory walk = [int256(100e8), 101e8, 100e8, 102e8, 100e8, 103e8, 100e8];
+        for (uint256 i = 0; i < 7; i++) {
+            feed.push(walk[i], t);
+            t += 10 minutes;
+        }
+        vm.warp(t);
+        (, AAA.Metrics memory m) = agency.grade(address(feed));
+        assertEq(m.roundTrips, 3);
+    }
+
 }
