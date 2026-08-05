@@ -169,4 +169,19 @@ contract AAATest is Test {
         assertEq(m.roundTrips, 3);
     }
 
+    function test_reportCardWalksEveryFeed() public {
+        MockAggregator feed = new MockAggregator();
+        feed.push(100e8, SEP8_TUE + 14 hours);
+        address[] memory fs = new address[](1);
+        string[] memory ns = new string[](1);
+        fs[0] = address(feed);
+        ns[0] = "TEST";
+        AAA board = new AAA(fs, ns);
+        vm.warp(SEP8_TUE + 14 hours + 5 minutes);
+        (string[] memory tickers, string[] memory letters, AAA.Metrics[] memory ms) = board.reportCard();
+        assertEq(tickers.length, 1);
+        assertEq(tickers[0], "TEST");
+        assertEq(ms[0].rounds, 1);
+        assertTrue(bytes(letters[0]).length > 0);
+    }
 }
