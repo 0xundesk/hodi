@@ -1,0 +1,287 @@
+[
+ {
+  "description": "BTC / USD",
+  "aggregator": "0xc5845f87ad59a7a3d4bf9b90a0c19dba38475eec",
+  "prints_per_day": 8
+ },
+ {
+  "description": "BTC.B / USD",
+  "aggregator": "0x145db0a26222934d32a0bd539863158afb5ee30b",
+  "prints_per_day": 4
+ },
+ {
+  "description": "CBBTC / USD",
+  "aggregator": "0xfaa5fda549575e3b602ad70e4bd8020a28387f96",
+  "prints_per_day": 8
+ },
+ {
+  "description": "ENA / USD",
+  "aggregator": "0x815d23392a48bee944c872cbbb4bc47691ef710f",
+  "prints_per_day": 66
+ },
+ {
+  "description": "ETH / USD",
+  "aggregator": "0x6091e64eb7138eef066a80fd3a0d7427b91f2721",
+  "prints_per_day": 13
+ },
+ {
+  "description": "EURC / USD",
+  "aggregator": "0x7035b3e2ff9621a6f97aafe5a5e3e5bbe718badf",
+  "prints_per_day": 1
+ },
+ {
+  "description": "LBTC / USD",
+  "aggregator": "0xd6fe4540bdf692cbe147fe19f75f9fd542d733bd",
+  "prints_per_day": 5
+ },
+ {
+  "description": "LINK / USD",
+  "aggregator": "0x3d2a8e2937f306d11829d95059deda9a290c74da",
+  "prints_per_day": 35
+ },
+ {
+  "description": "RHAMD / USD",
+  "aggregator": "0xdad54b8ee51af258e5a6faa9a84a3300f4775f7d",
+  "prints_per_day": 11
+ },
+ {
+  "description": "RHINTC / USD",
+  "aggregator": "0x95fb52f75aecbca8e12aa4403f840c8bc18cfbd4",
+  "prints_per_day": 40
+ },
+ {
+  "description": "RHMSFT / USD",
+  "aggregator": "0xc3b117f52cf17dd4369eaf5eaf7cf0e2f91b4e30",
+  "prints_per_day": 2
+ },
+ {
+  "description": "RHMU / USD",
+  "aggregator": "0xa088fad0a0a62693af068e2edb80b1578c8a9365",
+  "prints_per_day": 25
+ },
+ {
+  "description": "RHNVDA / USD",
+  "aggregator": "0xc9d16e4f2569b9e3ea0468fd85844953713dc2a2",
+  "prints_per_day": 4
+ },
+ {
+  "description": "RHSNDK / USD",
+  "aggregator": "0x7b2fdfcea772f093dd33b3acf8ee294b368f6c23",
+  "prints_per_day": 31
+ },
+ {
+  "description": "RHSPY / USD",
+  "aggregator": "0x78bcb218fa04b9b3a278ebc865ed320bf8defbac",
+  "prints_per_day": 1
+ },
+ {
+  "description": "RHTSLA / USD",
+  "aggregator": "0x7a6b81ba7fbcb90104d8c496158cf383cd7233b1",
+  "prints_per_day": 6
+ },
+ {
+  "description": "RHUSO / USD",
+  "aggregator": "0xa6ac45e27d19f91c55109191d71cfba4a9f5fbe1",
+  "prints_per_day": 11
+ },
+ {
+  "description": "Robinhood AAPL / USD",
+  "aggregator": "0xbb11a21267cfdb63d4935d99a499133dd1744acb",
+  "prints_per_day": 2
+ },
+ {
+  "description": "Robinhood AMZN / USD",
+  "aggregator": "0x93503dfc97157cdb8aadccaf70452621d598fdeb",
+  "prints_per_day": 2
+ },
+ {
+  "description": "Robinhood ASML / USD",
+  "aggregator": "0xf795030a46ad6ca4b07bf5fb704dc36039118c9f",
+  "prints_per_day": 14
+ },
+ {
+  "description": "Robinhood BABA / USD",
+  "aggregator": "0xff5f85e4888782e66f1dd9cabadf4822fbeb1439",
+  "prints_per_day": 10
+ },
+ {
+  "description": "Robinhood CLSK / USD",
+  "aggregator": "0xeff19b88e3c72f046e4a19a1e62544d5869d4275",
+  "prints_per_day": 18
+ },
+ {
+  "description": "Robinhood COIN / USD",
+  "aggregator": "0x30398b0b0df82a009bb2d507bc7fe1dc6d3ca294",
+  "prints_per_day": 14
+ },
+ {
+  "description": "Robinhood CRCL / USD",
+  "aggregator": "0x901d8df245e48dfc82d6483fc45b5be6ddc5281a",
+  "prints_per_day": 29
+ },
+ {
+  "description": "Robinhood CRWV / USD",
+  "aggregator": "0xd9c04b7353421fc4deb1614ed13fe10d90e586cc",
+  "prints_per_day": 23
+ },
+ {
+  "description": "Robinhood DELL-USD",
+  "aggregator": "0xd6ed4e7d4aba1111eb42a349899b5c72ee1c9fef",
+  "prints_per_day": 17
+ },
+ {
+  "description": "Robinhood EWY / USD",
+  "aggregator": "0x105cbe427bbd3225826a450f67ea80fec6417f93",
+  "prints_per_day": 20
+ },
+ {
+  "description": "Robinhood GME / USD",
+  "aggregator": "0xf83cde62d1cd90de8d2bf3332b90c590985ad679",
+  "prints_per_day": 7
+ },
+ {
+  "description": "Robinhood GOOGL / USD",
+  "aggregator": "0x11ed6d598ef565dda86fafe7e779303e7cc6b2bd",
+  "prints_per_day": 3
+ },
+ {
+  "description": "Robinhood IONQ / USD",
+  "aggregator": "0x886e11c1053289eed882c734e1864efe3430bc24",
+  "prints_per_day": 26
+ },
+ {
+  "description": "Robinhood META / USD",
+  "aggregator": "0xc190b6164b9e320a6400cdab0085a2e0e2b9738e",
+  "prints_per_day": 5
+ },
+ {
+  "description": "Robinhood MSTR / USD",
+  "aggregator": "0x55bd01f666c99e4590e084fdeff88041bb50ccd1",
+  "prints_per_day": 22
+ },
+ {
+  "description": "Robinhood NBIS / USD",
+  "aggregator": "0xe50c4775fefc1e3c9206771dd0056aee30f51b2f",
+  "prints_per_day": 31
+ },
+ {
+  "description": "Robinhood ORCL / USD",
+  "aggregator": "0x4a9abc759e0b7b0ba98b5fd39c419a5d3e962aaf",
+  "prints_per_day": 22
+ },
+ {
+  "description": "Robinhood PLTR / USD",
+  "aggregator": "0x315afd0f71d5407b99ad19ab001a67af40fbaaf4",
+  "prints_per_day": 5
+ },
+ {
+  "description": "Robinhood QQQ / USD",
+  "aggregator": "0x25e996ce8b3529885d429241156e83e7b7744049",
+  "prints_per_day": 3
+ },
+ {
+  "description": "Robinhood RGTI / USD",
+  "aggregator": "0x42b1c5174ce84be751a23489d7dbdc969bc17ea2",
+  "prints_per_day": 55
+ },
+ {
+  "description": "Robinhood RKLB / USD",
+  "aggregator": "0x59ab60b1d63de8b282852573d18a3a99c04c787c",
+  "prints_per_day": 14
+ },
+ {
+  "description": "Robinhood SGOV-USD",
+  "aggregator": "0x0e96b7708487f91baac09697593d3e8bf253f2d8",
+  "prints_per_day": 1
+ },
+ {
+  "description": "Robinhood SLV / USD",
+  "aggregator": "0xcdf6f7043b3af6afa0caaace1230b355096b5386",
+  "prints_per_day": 9
+ },
+ {
+  "description": "Robinhood SPCX / USD",
+  "aggregator": "0x5eaa223c585f40cdca2d119ea91b97c491245631",
+  "prints_per_day": 7
+ },
+ {
+  "description": "Robinhood TSM / USD",
+  "aggregator": "0x2b3a9a18998e9464760658233ab093e6aebf45d0",
+  "prints_per_day": 8
+ },
+ {
+  "description": "Robinhood USAR-USD",
+  "aggregator": "0x76ba75c6c362900b275d9d4d5c422f0275e85578",
+  "prints_per_day": 13
+ },
+ {
+  "description": "SYRUPUSDC / USD",
+  "aggregator": "0xb83364c22b67198e0190d644c6f09a9c84f26c72",
+  "prints_per_day": 1
+ },
+ {
+  "description": "SYRUPUSDC / USDC Exchange Rate",
+  "aggregator": "0x6fcd854cccda17601d00d95e34980dd29ebfe029",
+  "prints_per_day": 1
+ },
+ {
+  "description": "SYRUPUSDT / USDT Exchange Rate",
+  "aggregator": "0xc234780e5fd127f2bb229366e0ee920507b0b913",
+  "prints_per_day": 1
+ },
+ {
+  "description": "USDC / USD",
+  "aggregator": "0xdadd7441395913a7468fac020709e86aefc04ef9",
+  "prints_per_day": 1
+ },
+ {
+  "description": "USDE / USD",
+  "aggregator": "0xfca395953f9d4e53c2d61be67ff5337de6d8f06c",
+  "prints_per_day": 1
+ },
+ {
+  "description": "USDG / USD",
+  "aggregator": "0x8beee3503f6860d5dac4ce26b5eee92982951c2e",
+  "prints_per_day": 1
+ },
+ {
+  "description": "USDS / USD",
+  "aggregator": "0x48f8cb1abad9f69c0bf3475bfc282e493f1c2aa1",
+  "prints_per_day": 1
+ },
+ {
+  "description": "USDT / USD",
+  "aggregator": "0x5644f992083c57af913d5bdeba1d046c92fb3424",
+  "prints_per_day": 1
+ },
+ {
+  "description": "WBTC / USD",
+  "aggregator": "0x983f726bf320cdc1fdae041dba782cd08a55842f",
+  "prints_per_day": 8
+ },
+ {
+  "description": "WEETH / EETH Exchange Rate",
+  "aggregator": "0xed5e146da45fa2c74a2dbb261c87d8b264f37194",
+  "prints_per_day": 1
+ },
+ {
+  "description": "WEETH / USD",
+  "aggregator": "0x2b65a9e1ff6b36a76e50a383a2d2702cd9e78047",
+  "prints_per_day": 13
+ },
+ {
+  "description": "WSTETH / STETH Exchange Rate",
+  "aggregator": "0xfce34d502cc65c123e7e6587fc2ef299fd4e428e",
+  "prints_per_day": 1
+ },
+ {
+  "description": "WSTETH / USD",
+  "aggregator": "0x94201f15c0b7701d3f93f3c780042e6a76214104",
+  "prints_per_day": 11
+ },
+ {
+  "description": "syrupUSDG / USDG Exchange Rate",
+  "aggregator": "0xd972eb40c14c8aba1c44c1df6e0a6e1d592c1012",
+  "prints_per_day": 1
+ }
+]
