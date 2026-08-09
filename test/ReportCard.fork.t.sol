@@ -76,5 +76,41 @@ contract ReportCardForkTest is Test {
         ns[28] = "USAR";
     }
 
-    function test_gradeEveryStockOnTheChain() public {}
+    function test_gradeEveryStockOnTheChain() public {
+        (address[] memory fs, string[] memory ns) = _board();
+        console.log("");
+        console.log("TICKER  GRADE   worst silence   dark now   trips  rounds");
+        uint256 gasOneFeed;
+        for (uint256 i = 0; i < N; i++) {
+            vm.createSelectFork(vm.rpcUrl("hood"));
+            AAA agency = new AAA(new address[](0), new string[](0));
+            uint256 g0 = gasleft();
+            (string memory letter, AAA.Metrics memory m) = agency.grade(fs[i]);
+            gasOneFeed = g0 - gasleft();
+            console.log(
+                string.concat(
+                    _pad(ns[i], 8),
+                    _pad(letter, 8),
+                    _padLeft(vm.toString(m.worstSilence / 60), 6),
+                    "m ",
+                    _padLeft(m.silentNow == type(uint256).max ? "-" : vm.toString(m.silentNow / 60), 9),
+                    "m ",
+                    _padLeft(vm.toString(m.roundTrips), 7),
+                    _padLeft(vm.toString(m.rounds), 8)
+                )
+            );
+        }
+        console.log("");
+        console.log("gas to grade one stock, one eth_call:", gasOneFeed);
+    }
+
+    function _pad(string memory s, uint256 w) internal pure returns (string memory) {
+        while (bytes(s).length < w) s = string.concat(s, " ");
+        return s;
+    }
+
+    function _padLeft(string memory s, uint256 w) internal pure returns (string memory) {
+        while (bytes(s).length < w) s = string.concat(" ", s);
+        return s;
+    }
 }
