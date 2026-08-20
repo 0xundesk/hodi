@@ -3,3 +3,5 @@
 </p>
 
 <h1 align="center">AAA</h1>
+
+<p align="center"><b>A rating agency with nobody inside.</b></p>
