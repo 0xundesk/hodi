@@ -1,4 +1,5 @@
-# AAA
+<p align="center">
+  <img src="assets/agency.webp" alt="An empty rating agency lobby" width="100%">
+</p>
 
-A rating agency with nobody inside.
-
+<h1 align="center">AAA</h1>
