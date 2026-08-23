@@ -14,3 +14,14 @@
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
 </p>
 
+---
+
+In 2008 the AAA stamp was something people sold. The agencies that sold it are
+still the agencies, and their product is still the same three letters, decided
+by people in rooms.
+
+This agency hands out the same letters and cannot be talked to, paid, or
+pressured, because there is nobody in the building. A grade is computed from a
+feed's own published history, on chain, at the moment you ask for it. Ask
+again and it is computed again. There is no committee, no analyst, no owner,
+and no number to call.
