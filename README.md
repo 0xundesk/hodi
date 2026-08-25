@@ -30,3 +30,4 @@ What it grades: tokenized stocks. Real US equities trade on chain now, and
 every one of them hangs off a price feed. Whether that feed shows up for work
 is the whole ballgame, and nobody was grading it. Now something is.
 
+## The report card
