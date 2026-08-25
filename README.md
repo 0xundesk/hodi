@@ -31,3 +31,39 @@ every one of them hangs off a price feed. Whether that feed shows up for work
 is the whole ballgame, and nobody was grading it. Now something is.
 
 ## The report card
+
+Every single-stock feed publishing on Robinhood chain, graded by the contract
+itself on a fork of mainnet:
+
+```
+TICKER  GRADE   worst silence   dark now   trips  rounds
+AAPL    BBB        382m       349m       0     300
+AMD     BBB        222m        20m       0     300
+AMZN    BBB        372m       232m       1     300
+ASML    BBB        336m        15m       0     300
+BABA    BBB        288m        74m       1     300
+CLSK    BB         108m         0m      27     300
+COIN    A          117m        70m       1     300
+CRCL    A           97m         0m       2     300
+CRWV    BB         127m         0m       3     300
+DELL    AA          73m        20m       0     300
+GME     BB         282m         0m      19     300
+GOOGL   BBB        375m        70m       0     300
+INTC    BB         228m         3m       3     300
+IONQ    BBB        248m         2m       2     300
+META    BBB        288m         0m       0     300
+MSFT    BBB        390m         0m       0     300
+MSTR    A          100m        71m       0     300
+MU      BBB        238m         7m       0     300
+NBIS    A          143m         0m       1     300
+NVDA    BBB        349m       220m       1     300
+ORCL    A          172m         0m       0     300
+PLTR    BBB        240m        15m       0     300
+RGTI    BB         127m         0m      22     300
+RKLB    BB         147m        37m       5     300
+SNDK    A          135m         0m       0     300
+SPCX    BBB        295m         7m       0     300
+TSLA    BBB        235m         8m       0     300
+TSM     BBB        365m         0m       0     300
+USAR    BB         112m         0m      11     300
+```
