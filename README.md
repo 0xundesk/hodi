@@ -25,3 +25,7 @@ pressured, because there is nobody in the building. A grade is computed from a
 feed's own published history, on chain, at the moment you ask for it. Ask
 again and it is computed again. There is no committee, no analyst, no owner,
 and no number to call.
+
+What it grades: tokenized stocks. Real US equities trade on chain now, and
+every one of them hangs off a price feed. Whether that feed shows up for work
+is the whole ballgame, and nobody was grading it. Now something is.
