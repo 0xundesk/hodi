@@ -74,3 +74,9 @@ declining to hand out its own name. One AA on the whole chain, and it is DELL.
 And look at the trips column: CLSK's price walked away and came back to the
 exact same print twenty seven times.
 
+## How a feed earns its letter
+
+The agency walks the feed's last 300 stored rounds and measures four things.
+Everything is judged against the exchange calendar that lives inside the
+contract: weekends, NYSE holidays, and the overnight count for nothing, and
+the session clock follows US daylight saving.
