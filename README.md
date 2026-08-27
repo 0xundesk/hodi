@@ -73,3 +73,4 @@ top line of the board: **nobody earned a AAA.** The agency's first act was
 declining to hand out its own name. One AA on the whole chain, and it is DELL.
 And look at the trips column: CLSK's price walked away and came back to the
 exact same print twenty seven times.
+
