@@ -80,3 +80,13 @@ The agency walks the feed's last 300 stored rounds and measures four things.
 Everything is judged against the exchange calendar that lives inside the
 contract: weekends, NYSE holidays, and the overnight count for nothing, and
 the session clock follows US daylight saving.
+
+| worst silence during market hours | grade ceiling |
+| --- | --- |
+| 30 minutes | AAA |
+| 90 minutes | AA |
+| half a session | A |
+| one full session | BBB |
+| two sessions | BB |
+| a week of half days | B |
+| worse | CCC |
