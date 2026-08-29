@@ -91,3 +91,4 @@ the session clock follows US daylight saving.
 | a week of half days | B |
 | worse | CCC |
 
+Then the overrides, in the order they bite:
