@@ -90,3 +90,4 @@ the session clock follows US daylight saving.
 | two sessions | BB |
 | a week of half days | B |
 | worse | CCC |
+
