@@ -93,3 +93,6 @@ the session clock follows US daylight saving.
 
 Then the overrides, in the order they bite:
 
+**Dark right now beats everything.** More than a full session of market hours
+without a print means the feed is not at work today: **D**, whatever the
+history says.
