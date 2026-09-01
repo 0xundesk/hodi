@@ -96,3 +96,7 @@ Then the overrides, in the order they bite:
 **Dark right now beats everything.** More than a full session of market hours
 without a print means the feed is not at work today: **D**, whatever the
 history says.
+
+**Round trips end investment grade.** A price that walks A to B and comes back
+to exactly A is a feed showing its plumbing. One round trip caps the grade at
+A; three cap it at BB.
