@@ -101,3 +101,5 @@ history says.
 to exactly A is a feed showing its plumbing. One round trip caps the grade at
 A; three cap it at BB.
 
+**A thin file cannot be prime.** A feed with less than half the lookback on
+record is capped at A, the way a borrower with no history cannot be.
