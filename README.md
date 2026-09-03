@@ -108,3 +108,4 @@ The mapping is a pure function, `letterOf`, so the methodology is the code and
 the code is the methodology. There is nothing else to know and nobody to ask.
 
 ## Proof
+
