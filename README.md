@@ -104,3 +104,5 @@ A; three cap it at BB.
 **A thin file cannot be prime.** A feed with less than half the lookback on
 record is capped at A, the way a borrower with no history cannot be.
 
+The mapping is a pure function, `letterOf`, so the methodology is the code and
+the code is the methodology. There is nothing else to know and nobody to ask.
