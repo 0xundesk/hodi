@@ -109,3 +109,6 @@ the code is the methodology. There is nothing else to know and nobody to ask.
 
 ## Proof
 
+**The calendar is tested against the real one.** Labor Day is closed. Saturday
+is closed. The session is 13:30 to 20:00 UTC in summer and shifts an hour in
+winter, and the tests pin the actual 2026 daylight-saving switch dates.
