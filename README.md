@@ -116,3 +116,8 @@ winter, and the tests pin the actual 2026 daylight-saving switch dates.
 **The letters are tested rung by rung.** Every threshold on the ladder, every
 override, and the walk itself: a punctual feed grades AAA, one four-hour nap
 costs the grade, round trips are caught, thin files are capped.
+
+**The report card above is measured, not written.** Each stock is graded on a
+fresh fork of Robinhood chain mainnet by the same `grade()` call anyone can
+make for free. Grading one stock walks its three hundred rounds for about
+5.7M gas, which costs nothing, because reading is free.
