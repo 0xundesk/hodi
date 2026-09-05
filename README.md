@@ -113,3 +113,6 @@ the code is the methodology. There is nothing else to know and nobody to ask.
 is closed. The session is 13:30 to 20:00 UTC in summer and shifts an hour in
 winter, and the tests pin the actual 2026 daylight-saving switch dates.
 
+**The letters are tested rung by rung.** Every threshold on the ladder, every
+override, and the walk itself: a punctual feed grades AAA, one four-hour nap
+costs the grade, round trips are caught, thin files are capped.
