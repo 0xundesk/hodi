@@ -121,3 +121,4 @@ costs the grade, round trips are caught, thin files are capped.
 fresh fork of Robinhood chain mainnet by the same `grade()` call anyone can
 make for free. Grading one stock walks its three hundred rounds for about
 5.7M gas, which costs nothing, because reading is free.
+
