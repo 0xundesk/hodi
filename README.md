@@ -129,3 +129,11 @@ forge test --no-match-path 'test/*.fork.t.sol'     # rules and calendar
 forge test --match-path test/ReportCard.fork.t.sol -vv   # grade the board, live
 ```
 
+## Deploying an edition
+
+The contract has no owner, so the feed list baked in at deployment is the
+edition, like a calendar year. A new census means a new edition.
+
+```bash
+forge script script/Deploy.s.sol --rpc-url hood --broadcast
+```
