@@ -122,3 +122,9 @@ fresh fork of Robinhood chain mainnet by the same `grade()` call anyone can
 make for free. Grading one stock walks its three hundred rounds for about
 5.7M gas, which costs nothing, because reading is free.
 
+## Running it
+
+```bash
+forge test --no-match-path 'test/*.fork.t.sol'     # rules and calendar
+forge test --match-path test/ReportCard.fork.t.sol -vv   # grade the board, live
+```
