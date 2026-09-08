@@ -137,3 +137,7 @@ edition, like a calendar year. A new census means a new edition.
 ```bash
 forge script script/Deploy.s.sol --rpc-url hood --broadcast
 ```
+
+## License
+
+MIT
