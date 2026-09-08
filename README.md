@@ -6,6 +6,8 @@
 
 <p align="center"><b>A rating agency with nobody inside.</b></p>
 
+CA: 0x44f7c92a1d2ac1014f748487c29222143bff7c4c
+
 <p align="center">
   <img src="https://img.shields.io/badge/tests-passing-3fb950" alt="tests">
   <img src="https://img.shields.io/badge/solidity-0.8.26-363636" alt="solidity">
