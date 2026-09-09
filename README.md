@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/badge/solidity-0.8.26-363636" alt="solidity">
   <img src="https://img.shields.io/badge/chain-Robinhood-ff5100" alt="chain">
   <img src="https://img.shields.io/badge/analysts-0-000000" alt="analysts">
+  <a href="https://x.com/AAAratings"><img src="https://img.shields.io/badge/x-@AAAratings-000000?logo=x" alt="x"></a>
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="license">
 </p>
 
