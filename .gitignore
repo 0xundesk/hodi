@@ -3,3 +3,5 @@ out/
 broadcast/
 .env
 .wallet
+foundry.lock
+
